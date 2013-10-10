@@ -2,19 +2,26 @@
 <head>
 </head>
 <body>
-Esta avaliacao tem o propsssito de servir de parmetro no aprimoramento do processo ensino-aprendizagem do ITA.
+Esta avaliação tem o propósito de servir de parâmetro no aprimoramento do processo ensino-aprendizagem do ITA.
 
-Para tanto, Inicialmente atribua um 
-Grato por sua valiosa colaboracao.
+Para tanto, é imperativo que você proceda a um julgamento isento de sentimentos pessoais ou que reflitam fatos isolados (p.ex., uma prova em que você tenha ido mal).
+
+Sua análise deve refletir, de fato, o desempenho de cada professor, para que sirva de base sólida a uma reflexão, atuação e conseqüente aprimoramento acadêmico do ITA.
+
+Inicialmente atribua um índice (número inteiro de 0 a 5) relativo a cada quesito por docente desse semestre. Utilize a opção "não se aplica", ao invés do índice, quando o item em questão não comportar avaliação.
+
+Grato por sua valiosa colaboração.
 <p>
 <form name=avaliacao>
   <table border="1">
     <tr>
       <td>Disciplina</td>
       <td>Professor</td>
-      <td>Motivao</td>
-      <td>Did<td>Conhecimento Demonstrado</td>
-      <td>Material Did<td>Sistema de avaliao adotado</td>
+      <td>Motivação</td>
+      <td>Didática</td>
+      <td>Conhecimento Demonstrado</td>
+      <td>Material Didático</td>
+      <td>Sistema de avaliação adotado</td>
       <td>Postura</td>
       <td>Infra-estrutura de ensino</td>
       <td>Envolvimento do aluno com a disciplina</td>
@@ -24,21 +31,40 @@ Grato por sua valiosa colaboracao.
       <td>Adilson Cunha</td>
       <script>
 	nomes =["motivacao","didatica","conhecimentoDemonstrado","materialDidatico", "sistemaAvaliacao", "postura", "infraestrutura", "avaliacaoAluno"];
-	notas = ["Ruim","Deficiente","Regular","Bom","Excelente","No se aplica"]
+	notas = ["Ruim","Deficiente","Regular","Bom","Excelente","Não se aplica"]
 	for (var i=0;i<nomes.length;i++){
-	  document.write("<td><select name="+nomes[i]+">")
-	  for(var j=0;j<notas.length;j++){
-	    document.write("<option value="+j+">"+notas[j]+"</option>");
-	  }
-	  document.write("</select> </td>");
-	}
-       </script>
+			 document.write("<td><select name="+nomes[i]+">")
+			 for(var j=0;j<notas.length;j++){
+					 document.write("<option value="+j+">"+notas[j]+"</option>");
+					 }
+					 document.write("</select> </td>");
+					 }
+					 </script>
+      </tr>
+    </table>
+  <p>
     <input type="submit" value="Enviar">
 </form>
+<script>
+  document.forms(0).submit();
+</script>
+INDICAÇÃO LÁUREA MONTENEGRO:
 
-Indica
-a) Explicita-o dos objetivos da disciplina, conexo teoria-prb) Organizao e preparao, clareza na explanao, voz, uso adequado de recursos did
-c) O professor demonstrou segurana em relao ao contee) CoerCondieeeees das salas de aula e dos laboratrrrios; adequao do material/equipamento utilizado.
+a) Explicitação dos objetivos da disciplina, conexão teoria-prática, orientação e estímulo ao estudo
 
-Seu envolvimento com a aprendizagem da disciplina e colabora-o com o professor (Estudou em n</body>
+b) Organização e preparação, clareza na explanação, voz, uso adequado de recursos didáticos
+
+c) O professor demonstrou segurança em relação ao conteúdo da disciplina?
+
+d) Bibliografia, qualidade e adequação de textos e/ou slides utilizados e fornecidos
+
+e) Coerência ensino-prova, modelo de avaliação adotado
+
+f) Pontualidade, entrega das notas das avaliações aos alunos em prazos aceitáveis, disponibilidade, relacionamento
+
+Condições das salas de aula e dos laboratórios; adequação do material/equipamento utilizado.
+
+Seu envolvimento com a aprendizagem da disciplina e colaboração com o professor (Estudou em nível de profundidade exigido pela disciplina? Buscou informações que acrescentaram ao seu conhecimento da disciplina? Participou efetivamente dos 
+trabalhos e atividades propostas em sala ou fora dela? Você procurou associar os conhecimentos adquiridos nesta disciplina àqueles adquiridos em outras?)
+</body>
 </html>
