@@ -1,6 +1,6 @@
 {
   "name": "avalia",
-  "version": "1.0",
+  "version": "0.0.2",
   "description": "Site de avaliacao do ITA",
   "main": "web.js",
   "scripts": {
