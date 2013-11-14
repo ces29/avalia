@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
 app.use(express.logger());
+app.use(express.static(__dirname+'/'));
 
 var fs = require('fs')
 var buf = fs.readFileSync('index.html');
